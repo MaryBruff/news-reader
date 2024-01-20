@@ -1,6 +1,4 @@
 export const sampleData = {
-  "status": "ok",
-  "totalResults": 14402,
   "articles": [
       {
           "source": {
