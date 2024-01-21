@@ -1,9 +1,15 @@
 import React from 'react'
 import './Home.css'
+import ArticleContainer from '../ArticleContainer/ArticleContainer'
+import Header from '../Header/Header'
 
-const Home = () => {
+const Home = ({ filterArticles, searchInput, setSearchInput }) => {
+
   return (
-    <main className="home">Home</main>
+    <main className="home">
+      <Header searchInput={searchInput} setSearchInput={setSearchInput} />
+      <ArticleContainer articles={filterArticles()} />
+    </main>
   )
 }
 
