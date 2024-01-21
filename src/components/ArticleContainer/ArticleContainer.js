@@ -1,23 +1,24 @@
-import React from 'react';
-import ArticleCard from './ArticleCard'; // Make sure this is correctly imported
-import './ArticleContainer.css';
+import React from "react";
+import Card from "../Card/Card";
 
 const ArticleContainer = ({ articles }) => {
   const articleCards = articles.map((article, index) => {
-    const { id, headline, img, description } = article;
+    const { id, title, urlToImage, description, publishedAt, url} = article;
 
     return (
-      <ArticleCard
-        key={index}
-        id={id} // Use destructured variables
-        headline={headline}
-        img={img}
+      <Card
+        key={id || index}
+        index={index}
+        title={title}
+        image={urlToImage}
         description={description}
+        date={publishedAt}
+        url={url}
       />
     );
   });
 
-  return <section className="article-container">{articleCards}</section>;
+  return <main className="article-container">{articleCards}</main>;
 };
 
 export default ArticleContainer;
