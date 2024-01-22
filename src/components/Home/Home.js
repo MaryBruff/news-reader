@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import Header from "../Header/Header";
 import { useState, useEffect } from "react";

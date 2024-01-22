@@ -14,7 +14,7 @@ const Article = ({ getArticle, formatDate, searchInput, setSearchInput }) => {
   const articleNotFound = !article;
 
   const resetSearchInput = () => {
-    setSearchInput(""); // Reset search input to initial state (e.g., empty string)
+    setSearchInput(""); 
   };
 
   useEffect(() => {
