@@ -39,28 +39,13 @@
 .article-card-description {
   font-size: 1em;
   margin-top: 10px;
-  color: #eaeaea; 
-  height: auto; 
+  color: #eaeaea;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; 
-}
-
-.read-article-button {
-  display: block; 
-  width: calc(100% - 30px); 
-  margin-top: 15px;
-  padding: 10px 0; 
-  background-color: #e0c9a6; 
-  color: #fff;
-  text-decoration: none; 
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-}
-
-.read-article-button:hover {
-  /* background-color: #5a5047;  */
-  background-color: #EDF5E1;
 }
 
 .no-underline {
