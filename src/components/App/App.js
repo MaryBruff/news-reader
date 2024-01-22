@@ -1,23 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../Home/Home";
 import Article from "../Article/Article";
-import { sampleData } from "../SampleData";
+// import { sampleData } from "../SampleData";
+import { getArticles } from "../Api-calls";
+
 
 function App() {
-  const [articles, setArticles] = useState(sampleData);
+  const location = useLocation();
+  const [articles, setArticles] = useState({ articles: [] });
+
   const [searchInput, setSearchInput] = useState("");
 
-  // useEffect(() => {
-  //   getArticles()
-  //   .then(data => console.log(data))
-  //   .catch(error => console.log(error))
-  // } , [])
+
+  useEffect(() => {
+    getArticles()
+      .then(data => {
+        setArticles(data); 
+      })
+      .catch(error => console.log(error));
+  }, []);
+  
+
+
+  useEffect(() => {
+    resetSearchInput();
+  }, [location]); 
+
+  const resetSearchInput = () => {
+    setSearchInput("");
+  };
 
   const filterArticles = () => {
     return articles.articles.filter((article) => {
-      return article.title.toLowerCase().includes(searchInput.toLowerCase());
+      return article.source.name.toLowerCase().includes(searchInput);
     });
   };
 
@@ -35,6 +52,7 @@ function App() {
               filterArticles={filterArticles}
               searchInput={searchInput}
               setSearchInput={setSearchInput}
+              resetSearchInput={resetSearchInput} 
             />
           }
         />
