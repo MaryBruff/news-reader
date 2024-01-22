@@ -1,6 +1,7 @@
 import "./Header.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Header = ({
   searchInput,
@@ -32,6 +33,7 @@ const Header = ({
 
   const goBack = () => {
     try {
+      resetSearchInput();
       navigate("/");
     } catch (error) {
       console.error("Navigation error:", error);
@@ -64,6 +66,13 @@ const Header = ({
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  searchInput: PropTypes.string.isRequired,
+  setSearchInput: PropTypes.func.isRequired,
+  resetSearchInput: PropTypes.func,
+  showBackButton: PropTypes.bool,
 };
 
 export default Header;

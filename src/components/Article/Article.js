@@ -4,6 +4,7 @@ import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "../Header/Header";
+import PropTypes from 'prop-types';
 
 const Article = ({ getArticle, formatDate, searchInput, setSearchInput }) => {
   const navigate = useNavigate();
@@ -11,6 +12,10 @@ const Article = ({ getArticle, formatDate, searchInput, setSearchInput }) => {
   const articleIndex = parseInt(index, 10);
   const article = getArticle(articleIndex);
   const articleNotFound = !article;
+
+  const resetSearchInput = () => {
+    setSearchInput(""); // Reset search input to initial state (e.g., empty string)
+  };
 
   useEffect(() => {
     if (articleNotFound) {
@@ -39,6 +44,7 @@ const Article = ({ getArticle, formatDate, searchInput, setSearchInput }) => {
       <Header
         searchInput={searchInput}
         setSearchInput={setSearchInput}
+        resetSearchInput={resetSearchInput}
         showBackButton={true}
       />
       <div className="article card">
@@ -61,4 +67,13 @@ const Article = ({ getArticle, formatDate, searchInput, setSearchInput }) => {
   );
 };
 
+Article.propTypes = {
+  getArticle: PropTypes.func.isRequired,
+  formatDate: PropTypes.func.isRequired,
+  searchInput: PropTypes.string.isRequired,
+  setSearchInput: PropTypes.func.isRequired
+};
+
 export default Article;
+
+

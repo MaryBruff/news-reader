@@ -15,6 +15,15 @@ function App() {
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
+  const formatDate = (isoDateString) => {
+    const date = new Date(isoDateString);
+    return date.toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
+  };
+
   useEffect(() => {
     getArticles()
       .then((data) => {
@@ -63,7 +72,13 @@ function App() {
         />
         <Route
           path="/Article/:index"
-          element={<Article getArticle={getArticle} />}
+          element={
+          <Article 
+          getArticle={getArticle} 
+          formatDate={formatDate}
+          searchInput={searchInput} 
+          setSearchInput={setSearchInput} 
+          />}
         />
         <Route path="/error" element={<Error />} />
       </Routes>

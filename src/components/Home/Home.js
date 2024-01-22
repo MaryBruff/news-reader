@@ -3,6 +3,7 @@ import "./Home.css";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import Header from "../Header/Header";
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const Home = ({
   filterArticles,
@@ -10,8 +11,6 @@ const Home = ({
   setSearchInput,
   resetSearchInput,
 }) => {
-
-
   const [noResultsError, setNoResultsError] = useState(false);
   const articles = filterArticles();
 
@@ -23,7 +22,7 @@ const Home = ({
     }
   }, [searchInput, articles]);
 
-  const showBackButton = searchInput.length > 0; 
+  const showBackButton = searchInput.length > 0;
 
   return (
     <main className="home">
@@ -31,9 +30,9 @@ const Home = ({
         searchInput={searchInput}
         setSearchInput={setSearchInput}
         resetSearchInput={resetSearchInput}
-        showBackButton={showBackButton} 
+        showBackButton={showBackButton}
       />
-        {noResultsError && (
+      {noResultsError && (
         <div className="error-message">
           No articles found matching the search criteria.
         </div>
@@ -41,6 +40,13 @@ const Home = ({
       <ArticleContainer articles={articles} />
     </main>
   );
+};
+
+Home.propTypes = {
+  filterArticles: PropTypes.func.isRequired,
+  searchInput: PropTypes.string.isRequired,
+  setSearchInput: PropTypes.func.isRequired,
+  resetSearchInput: PropTypes.func.isRequired,
 };
 
 export default Home;

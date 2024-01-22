@@ -2,6 +2,7 @@ import React from "react";
 import "./Card.css";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Card = ({ index, title, image, description, date, source }) => {
   function formatDate(isoDateString) {
@@ -26,6 +27,15 @@ const Card = ({ index, title, image, description, date, source }) => {
       </div>
     </Link>
   );
+};
+
+Card.propTypes = {
+  index: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  description: PropTypes.string,
+  date: PropTypes.string.isRequired,
+  source: PropTypes.string.isRequired,
 };
 
 export default Card;
