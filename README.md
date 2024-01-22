@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+<div align=center> 
+  
+## Built with
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot 2024-01-22 at 9 45 23 AM](https://github.com/MaryBruff/news-reader/assets/128327004/a5d1905f-3e5c-41dc-8672-8e6473fa2cc8)
 
-## Available Scripts
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
+    
+![Tests](https://badgen.net/badge/tests/passing/pink?icon=github)
+![Commits](https://badgen.net/github/last-commit/MaryBruff/news-reader)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 👩🏼‍💻 Author
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Mary Bruff](https://github.com/MaryBruff)  | 
+[LinkedIn](https://www.linkedin.com/in/mary-bruff/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Tech Stack
+![React Badge](https://img.shields.io/badge/react-%233366CC.svg?&style=for-the-badge&logo=react&logoColor=white)
+![React Router Badge](https://img.shields.io/badge/React_Router-%233366CC?style=for-the-badge&logo=react-router&logoColor=white)
+![Cypress Badge](https://img.shields.io/badge/VSCode-%233366CC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![VSCode Badge](https://img.shields.io/badge/VSCode-%233366CC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-%233366CC?style=for-the-badge&logo=postman&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-%233366CC.svg?style=for-the-badge&logo=Vercel&logoColor=white)
 
-### `npm run eject`
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📚 Table of Contents
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Preview](#preview)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---------------
 
-## Learn More
+<h2 id="overview" > 
+  
+  ![news](https://github.com/MaryBruff/news-reader/assets/128327004/90a3617c-5b32-4312-b599-0af9fda473c5) Overview 
+</h2>
+  
+## Take-Home Front End Prompt
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*Develop a user-friendly news feed app using React JS, showcasing features like article listing with headlines, images, descriptions, and detailed views, along with a search, filter, or sort functionality, all optimized for desktop, tablet, and mobile. Focus on demonstrating strong React and front-end practices, prioritizing MVP with a clear information hierarchy and clean code, and adhere to basic usability standards within an 8-hour timeframe, avoiding overly complex UI elements.*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+----
+<h2  id="getting-started">🗂️ Getting Started </h2>
 
-### Analyzing the Bundle Size
+1. Fork or clone down this respository.
+```bash
+git clone git@github.com:MaryBruff/news-reader.git
+``` 
+2. In the terminal, open this app by running the command `cd <project folder name>`
+ ```bash
+cd news-reader
+``` 
+3. Run the command  `npm install` to install dependencies.
+ ```bash
+npm install 
+``` 
+4. Run the command `npm start` to start the server.
+ ```bash
+npm start
+``` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5.. Use command C to stop the server.
+ ```bash
+CMD + C
+``` 
+*To view the app*
 
-### Making a Progressive Web App
+8. **Open [http://localhost:3000](http://localhost:3000) to view it in your browser.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h2  id="preview"> 🎥 Preview for Site && Responsiveness 📱 </h2>
+<details>
+    
+![Recording 2024-01-22 at 10 10 36](https://github.com/MaryBruff/news-reader/assets/128327004/0bfc536e-793f-44b8-8447-d903733ece75)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+📱 Mobile and Tablet Views 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Screenshot 2024-01-22 at 10 13 34 AM](https://github.com/MaryBruff/news-reader/assets/128327004/a65e93a4-a983-4274-a36d-99e827f9713e)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2024-01-22 at 10 13 44 AM](https://github.com/MaryBruff/news-reader/assets/128327004/d65d1bb3-ea97-4695-9a14-a27afedac8f1)
+
+
+![Screenshot 2024-01-22 at 10 13 52 AM](https://github.com/MaryBruff/news-reader/assets/128327004/47f97326-943c-417d-afd3-248c65468ffb)
+
+
+  <summary>
+    Preview of App
+</summary>
+  </details>
+
+
+
+<div align= "center">
+  
+
+
+</center>
