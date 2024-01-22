@@ -4,7 +4,8 @@ import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Card = ({ index, title, image, description, date, source }) => {
+const Card = ({ index, title, image, description, date, source, url }) => {
+
   function formatDate(isoDateString) {
     const date = new Date(isoDateString);
     return date.toLocaleDateString("en-US", {
@@ -13,6 +14,12 @@ const Card = ({ index, title, image, description, date, source }) => {
       year: "numeric",
     });
   }
+
+  const openExternalArticle = (event) => {
+    event.stopPropagation();
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
 
   return (
     <Link className="no-underline article-card" to={`/Article/${index}`}>
@@ -23,6 +30,9 @@ const Card = ({ index, title, image, description, date, source }) => {
           <p className="article-card-description">{description}</p>
           <p className="article-card-date">{formatDate(date)}</p>
           <p className="article-card-source">Source: {source}</p>
+          <button onClick={openExternalArticle} className="external-article-button">
+          Read Full Article
+        </button>
         </div>
       </div>
     </Link>
