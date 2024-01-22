@@ -27,7 +27,8 @@ function App() {
   useEffect(() => {
     getArticles()
       .then((data) => {
-        setArticles(data);
+        const filteredArticles = data.articles.filter(article => article.urlToImage && article.content);
+        setArticles({ articles: filteredArticles });
         setError(false);
         setErrorMessage("");
       })
