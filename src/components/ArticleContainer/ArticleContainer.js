@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 
 const ArticleContainer = ({ articles }) => {
   const articleCards = articles.map((article, index) => {
-    const { id, title, urlToImage, description, publishedAt, url} = article;
+    const { id, title, urlToImage, description, publishedAt, source, url} = article;
 
     return (
       <Card
@@ -13,6 +13,7 @@ const ArticleContainer = ({ articles }) => {
         image={urlToImage}
         description={description}
         date={publishedAt}
+        source={source.name}
         url={url}
       />
     );
