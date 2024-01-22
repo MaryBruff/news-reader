@@ -1,0 +1,36 @@
+.error-container {
+  background-color: #f3f1e0;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-title {
+  font-size: 2.5em;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.error-subtitle {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .error-container {
+    padding: 20px;
+  }
+
+  .error-title {
+    font-size: 2em;
+  }
+
+  .error-subtitle {
+    font-size: 1.2em;
+  }
+}
