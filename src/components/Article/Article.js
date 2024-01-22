@@ -32,7 +32,7 @@ const Article = ({ getArticle, formatDate, searchInput, setSearchInput }) => {
         <p className='article-card-date'>Date: {formatDate(article.publishedAt)}</p>
         <p className='article-card-description'>{article.content}</p>
         <button onClick={openArticle} className='read-full-article-button'>Read Full Article</button>
-        <p className='article-source'>Source: {article.source.name}</p>
+        {/* <p className='article-source'>Source: {article.source.name}</p> */}
       </div>
     </div>
   );
