@@ -4,6 +4,7 @@
   box-sizing: border-box;
   align-items: center;
   width: 300px; 
+  height: 500px;
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   background-color: #7b6c63;
@@ -18,11 +19,14 @@
 
 .article-card-image {
   width: 100%;
-  height: auto;
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .article-card-info {
-  padding: 15px; 
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
 }
 
 .article-card-date {
@@ -31,7 +35,7 @@
 }
 
 .article-card-title {
-  font-size: 1.5em; 
+  font-size: 1.3em; 
   margin-top: 10px; 
   font-weight: bold; 
 }
@@ -51,3 +55,8 @@
 .no-underline {
   text-decoration: none;
 }
+
+.article-card-title, .article-card-date, .article-card-source {
+  margin: 0; 
+}
+
