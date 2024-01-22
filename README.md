@@ -39,7 +39,7 @@
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 - [Preview](#preview)
-
+- [Documents](#documents)
 ---------------
 
 <h2 id="overview" > 
@@ -104,10 +104,37 @@ CMD + C
 </summary>
   </details>
 
+---
 
 
-<div align= "center">
+
+  
+<h2 id="documents"> 
+  
+
+# 💼 Documents
+<details>
+  <summary>Take-Home Spec</summary>
+
+🎒 View Project Requirements [Take-Home Spec Details](https://mod4.turing.edu/projects/take_home/take_home_fe)
+</details>
+
+<details>
+  <summary>Project Board</summary>
+  
+📌  View the [Project Board on GitHub](https://github.com/users/MaryBruff/projects/9/views/1)
+</details>
+
+<details>
+  <summary>API Site</summary>
+  
+🛜  Access the [Top Headlines API Documentation](https://newsapi.org/docs/endpoints/top-headlines)
+</details>
+
+
+  
+</h2>
+  
   
 
 
-</center>
